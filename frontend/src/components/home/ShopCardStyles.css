@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Midori';
+    src: url('../../assets/Midori Regular.ttf');
+}
+
+.ShopCardContainer{
+    display: grid;
+    grid-template-rows: 70% 14% 8% 8%;
+    grid-template-columns: 7% 93%;
+    border-radius: 20px;
+    margin: 5px;
+    height: 500px;
+    background-color: white;
+}
+.ShopCardContainer:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.501);
+    transform: scale(1.01);
+}
+
+.ShopCardImage{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.ShopCardName{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    font-size: 18px;
+    font-family: 'Midori';
+    font-weight: 900;
+    align-self: flex-end;
+    color:rgba(10,66,71,255);
+}
+
+.ShopCardRating{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    font-size: 16px;
+    font-family: 'Midori';
+    font-weight: bold;
+    color:rgba(10,66,71,255);
+    align-self: center;
+}
+
+.ShopRatingIcon{
+    display: inline;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 20px;
+    color: rgba(253, 203, 110,255);
+    align-self: center;
+}
+
+.ShopCardDist{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    font-family: 'Midori';
+    font-weight: bold;
+    color:rgba(10,66,71,255);
+}

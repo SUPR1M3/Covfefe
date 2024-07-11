@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Midori';
+    src: url('../assets/Midori Regular.ttf');
+}
+
+.ShopMenuDishContainer{
+    position: relative;
+    height:55%;
+    display: grid;
+    padding:4%;
+    grid-template-columns: 30% 5% 65%;
+    grid-template-rows: 25% 55% 20%;
+    color: rgba(10,66,71,255);
+    font-family: 'Midori';
+    background-color: rgba(237,240,239,255);
+    margin-top:4%;
+    margin-bottom: 4%;
+    border-radius: 20px;
+}
+
+.ShopMenuDishAddIcon{
+    position: absolute;
+    display: flex;
+    border-radius: 100px;
+    color: white;
+    border: 3px solid white;
+    background-color: rgba(10,66,71,255);
+    box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.301);;
+    top:0;
+    right:0;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.ShopMenuDishAddIcon:active{
+    transform: scale(0.95);
+}
+.ShopMenuDishAddIcon:hover{
+    background-color: rgba(10, 66, 71, 0.9);
+}
+
+.ShopMenuDishCartCount{
+    position: absolute;
+    display: flex;
+    border-radius: 100px;
+    color: white;
+    border: 3px solid white;
+    background-color: rgba(10,66,71,255);
+    box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.301);;
+    top:50%;
+    right:0;
+    width: 1.5em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    transform: translateY(-50%);
+}
+
+.ShopMenuDishReduceIcon{
+    position: absolute;
+    display: flex;
+    border-radius: 100px;
+    color: white;
+    border: 3px solid white;
+    background-color: rgba(10,66,71,255);
+    box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.301);;
+    bottom:0;
+    right:0;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.ShopMenuDishReduceIcon:active{
+    transform: scale(0.95);
+}
+.ShopMenuDishReduceIcon:hover{
+    background-color: rgba(10, 66, 71, 0.9);
+}
+
+.ShopMenuDishName{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    font-weight: 900;
+    align-self: flex-start;
+    font-size: 18px;
+}
+.ShopMenuDishDesc{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    align-self: center;
+}
+.ShopMenuDishPrice{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    align-self: flex-end;
+    font-weight: 600;
+}
+
+.ShopMenuDishImage{
+    grid-row: 1/4;
+    grid-column: 1/2;
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+}
